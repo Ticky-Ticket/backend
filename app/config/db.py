@@ -1,7 +1,6 @@
 import os 
 from dotenv import load_dotenv
 
-from pathlib import Path
 env_path = os.path.join('.', '.env')
 load_dotenv(dotenv_path=env_path)
 
@@ -26,6 +25,3 @@ class Settings :
         print(self.POSTGRES_PORT)
         print(self.POSTGRES_DB)
         print(self.DATABASE_URL)
-        
-if __name__=="__main__" :
-    s = Settings()
